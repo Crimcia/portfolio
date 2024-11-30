@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,regular,500,600,700');
+:root{
+    --margin: 27.722px;
+}
+body{
+    font-family: "IBM Plex Mono";
+    margin-left: 85px;
+    margin-right: 85px;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 1s ease;
+    color: mediumvioletred;
+}
+.footer-link:hover ~ body{
+    background-color: red;
+}
+header{
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid black 2px;
+}
+h1{
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 2px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 16px;
+}
+.nav-a::before{
+    content: "/";
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+.nav-a:hover{
+    color:rgb(153, 153, 102);
+}
+.record-container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px black;
+}
+.record-text{
+    border-right: solid 2px black;
+    width: 54%;
+    margin: var(--margin);
+}
+.record-info{
+    margin-top: 200px;
+    margin-right: 100px;
+}
+.record-desc{
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+.btn-view{
+    color: rgb(153, 153, 102);
+    font-size: 18px;
+    font-weight: lighter;
+    border: solid rgb(153, 153, 102) 2px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: all 0.5s;
+}
+.btn-view:hover{
+    background-color: rgb(153, 153, 102);
+    color: aliceblue;
+}
+.record-photo-container{
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+.record-photo{
+    transition: border-radius 0.5s;
+}
+.record-photo:hover{
+    border-radius: 40px;
+}
+.email-link{
+    color: rgb(153, 153, 102);
+}
+.email-link:hover{
+    text-decoration: line-through;
+}
+.about-container{
+    margin-top: 27.722px;
+}
+.about-info{
+    display: flex;
+    justify-content: space-around;
+}
+.about-text{
+    margin-left: 20px;
+}
+.about-container, .clients-container, .contact-container{
+    border-bottom: solid 2px black;
+}
+.about-info, .clients-info{
+    margin: var(--margin);
+}
+.clients-info, .contact-info{
+    font-size: 100px;
+}
+footer{
+    display:flex;
+}
+.footer-link{
+    padding-top: 70px;
+    height: 170px;
+    font-size: 50px;
+    font-weight: lighter;
+    width: 33%;
+    padding-left: 50px;
+}
+.first{
+    border-right: solid 2px black;
+}
+.last{
+    border-left: solid 2px black;
+}
