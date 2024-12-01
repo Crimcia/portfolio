@@ -11,9 +11,27 @@
     .vertical-line{
         border: none;
     }
-    .record-container, .about-container{
+    .record-container{
+        flex-direction: column;
+    }
+    .about-info{
         display: flex;
         flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .record-info{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .record-info{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .record-info{
+        font-size: 5px;
     }
 }
 :root{
@@ -30,7 +48,7 @@ body{
     color: mediumvioletred;
 }
 header{
-    font-size: 60px;
+    font-size: 4vw;
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom: solid black 2px;
