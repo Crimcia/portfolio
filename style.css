@@ -5,7 +5,7 @@
     }
 }
 @media only screen and (max-width: 1200px) {
-    .record-text, .record-photo-container, .record-photo, .about-photo{
+    .record-text, .record-photo-container, .record-photo, .about-photo, .record-info{
         width: 100%;
     }
     .vertical-line{
@@ -95,6 +95,7 @@ a{
 }
 .record-desc{
     font-weight: lighter;
+    font-size: 1.1vw;
     margin-bottom: 50px;
 }
 .btn-view{
@@ -104,6 +105,7 @@ a{
     border: solid rgb(153, 153, 102) 2px;
     border-radius: 30px;
     padding: 10px 30px;
+    display: inline-block;
     transition: all 0.5s;
 }
 .btn-view:hover{
