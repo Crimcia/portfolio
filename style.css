@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,regular,500,600,700');
+@media only screen and (max-width: 1000px) {
+    .right-nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .record-text, .record-photo-container, .record-photo{
+        width: 100%;
+    }
+    .vertical-line{
+        border: none;
+    }
+    .record-container, .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
 :root{
     --margin: 27.722px;
 }
@@ -11,9 +28,6 @@ body{
     font-weight: bold;
     transition: all 1s ease;
     color: mediumvioletred;
-}
-.footer-link:hover ~ body{
-    background-color: red;
 }
 header{
     font-size: 60px;
@@ -50,12 +64,15 @@ a{
     border-bottom: solid 2px black;
 }
 .record-text{
-    border-right: solid 2px black;
     width: 54%;
     margin: var(--margin);
 }
+.vertical-line{
+    border-left: solid 2px black;
+    margin: var(--margin); 
+}
 .record-info{
-    margin-top: 200px;
+    margin-top: 100px;
     margin-right: 100px;
 }
 .record-desc{
